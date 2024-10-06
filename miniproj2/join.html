@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Join Fitness Factory</title>
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">Fitness <span>Factory</span></a>
+        <ul class="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#plans">Pricing</a></li>
+            <li><a href="index.html#review">Review</a></li>
+        </ul>
+        <a href="login.html" class="nav-btn">Join us</a>
+        <a href="admin-login.html" class="nav-btn">Admin</a>
+    </header>
+
+    <section class="join" id="join">
+        <h2>Join Us Today!</h2>
+        <form id="joinForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="plan">Choose a Plan:</label>
+            <select id="plan" name="plan" required>
+                <option value="" disabled selected>Select a plan</option>
+                <option value="basic">FITNESS PASS BASIC - ₹500/Month</option>
+                <option value="pro">FITNESS PASS PRO - ₹650/Month</option>
+                <option value="elite">FITNESS PASS ELITE - ₹800/Month</option>
+            </select>
+
+            <h3>Payment Information</h3>
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+
+            <label for="expiry">Expiry Date:</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <button type="submit">Submit Payment</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-instagram bx-lg'></i></a>
+            <a href="#"><i class='bx bxl-facebook bx-lg'></i></a>
+            <a href="#"><i class='bx bxl-youtube bx-lg'></i></a>
+        </div>
+        <p class="copyright">
+            &copy; Fitness Factory 2024 - All Rights Reserved
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('joinForm').onsubmit = function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Here you would handle the payment process
+            alert("Payment processing... (This is just a demo)");
+        };
+    </script>
+
+</body>
+</html>

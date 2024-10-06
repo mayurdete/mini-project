@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Service Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar {
+            list-style: none;
+            display: flex;
+        }
+        .navbar li {
+            margin: 0 1rem;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+        .nav-btn {
+            background-color: #ff5722;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .service-detail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        .service-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 2rem;
+        }
+        .text-box {
+            flex: 1;
+            padding: 1rem;
+        }
+        .image-box {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .Social {
+            margin-bottom: 1rem;
+        }
+        .Social a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">Fitness <span>Factory</span></a>
+        <ul class="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#plans">Pricing</a></li>
+            <li><a href="index.html#review">Review</a></li>
+        </ul>
+        <a href="login.html" class="nav-btn">Join us</a>
+        <a href="admin-login.html" class="nav-btn">Admin</a>
+    </header>
+
+    <section class="service-detail">
+        <h2>Physical Fitness</h2>
+        <div class="service-container">
+            <div class="text-box">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, quod consectetur nemo iusto perspiciatis illo eaque eius illum. Dicta, mollitia. Nobis quis fugit a dolor ratione veniam reprehenderit voluptatem. Repudiandae!</p>
+            </div>
+            <div class="image-box">
+                <img src="GYM_Website_Images/image2.jpg" alt="Service Image">
+            </div>
+        </div>
+        <div class="service-container" style="flex-direction: row-reverse;">
+            <div class="image-box">
+                <img src="GYM_Website_Images/image2.jpg" alt="Service Image">
+            </div>
+            <div class="text-box">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, quod consectetur nemo iusto perspiciatis illo eaque eius illum. Dicta, mollitia. Nobis quis fugit a dolor ratione veniam reprehenderit voluptatem. Repudiandae!</p>
+            </div>
+        </div>
+        <a href="index.html#services" class="btn">Back to Services</a>
+    </section>
+
+    <footer class="footer">
+        <div class="Social">
+            <a href="#"><i class='bx bxl-instagram bx-lg'></i></a>
+            <a href="#"><i class='bx bxl-facebook bx-lg'></i></a>
+            <a href="#"><i class='bx bxl-youtube bx-lg'></i></a>
+        </div>
+        <p class="copyright">&copy; Fitness Factory 2024 - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
